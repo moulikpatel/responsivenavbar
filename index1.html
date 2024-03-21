@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        .main{
+            
+            display: flex;
+            width: 100%;
+            background-color: antiquewhite;
+            color: black;
+            height:30px;
+            padding-top: 5px;
+        }
+        .dropdown button{
+            padding:0em 2em 0em 2em;
+            background-color: antiquewhite;
+            border: none;
+            font-size: 18px;
+
+        }
+        .content{
+            display: none;
+            background-color: rgb(222, 242, 242);
+            width:90px;
+            box-shadow:  2px 2px #888888;
+        }
+        .content a{
+            
+            text-decoration: none;
+            border:2px solid white;
+            padding:10px;
+            text-align: center;
+            display: block;
+
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+        .content a:hover{
+            background-color: rgb(183, 236, 236); ;
+        }
+        #dropdown button{
+            padding:0em 2em 0em 2em;
+            background-color: antiquewhite;
+            border: none;
+            font-size: 18px;
+            display: none;
+
+        }
+        #content{
+            display: none;
+            background-color: rgb(222, 242, 242);
+            width:90px;
+            box-shadow:  2px 2px #888888;
+        }
+        #content a{
+            text-decoration: none;
+            border:2px solid white;
+            padding:10px;
+            text-align: center;
+            display: block;
+
+        }
+        #dropdown:hover #content{
+            display: block;
+        }
+        #content a:hover{
+            background-color: rgb(183, 236, 236); ;
+        }
+       
+
+        @media only screen and (max-width:680px){
+            .main{
+                display: none;
+            }
+            #dropdown button{
+                display: block;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="dropdown">
+        <button><i class="fa fa-bars"></i></button>
+        <div id="content">
+            <a href="">Home</a><a href="">About us</a><a href="">Contact Us</a><a href="">videos</a><a href="">Photos</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="dropdown">
+        <button>Home</button>
+    </div>
+        <div class="dropdown">
+            <button>About us</button>
+            <div class="content">
+                <a href="">target1</a><a href="">target2</a><a href="">target3</a>
+
+                
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>contact us</button>
+            <div class="content">
+                <a href="">target1</a><a href="">target2</a><a href="">target3</a>
+
+                
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>videos</button>
+            <div class="content">
+                <a href="">target1</a><a href="">target2</a><a href="">target3</a>
+
+                
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>photos</button>
+            <div class="content">
+                <a href="">target1</a><a href="">target2</a><a href="">target3</a>
+
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
